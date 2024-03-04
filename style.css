@@ -30,3 +30,61 @@ body {
     background-color: #fff;
     padding-left: 10px;
 }
+.game-level {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #ddd; 
+    background-image: url(assets/img/back.png);
+    background-size: cover;
+    height: 150px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.grid-item:nth-child(even) {
+    background-color: #ccc; 
+}
+
+.grid-item:hover {
+    background-color: #999;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.medium-level,
+.hard-level,
+.expert-level {
+    display: none;
+}
+#level1 {
+    /* background-color: #3a1a10; */
+}
+#level2 {
+    background-color: #ddc631;
+}
+#level3 {
+    background-color: #b9b9b9;
+}
+#level4 {
+    background-color: #2500f8;
+}
