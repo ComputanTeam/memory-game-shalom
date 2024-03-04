@@ -1,0 +1,32 @@
+body {
+    background-color: #5fdd31;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    padding: 20px 50px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    width: 80%;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+}
+.score {
+    width: 20%;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.username {
+    background-color: #fff;
+    padding-left: 10px;
+}
